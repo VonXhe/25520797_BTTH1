@@ -25,7 +25,7 @@ int main()
     tu1=tu1/ucl;
     mau1=mau1/ucl;
     cout<<tu1<<"\n";
-cout<<mau1;
-// dau ra tu mau da rut gon
+    cout<<mau1;
+    // dau ra tu mau da rut gon
     return 0;
 }
