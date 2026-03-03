@@ -53,6 +53,11 @@ int main()
     date ngay;
     cin>>ngay.day>>ngay.month>>ngay.year;
     int dim=daysinmonth(ngay.month, ngay.year);
+//kiếm tra date ko hợp lệ
+    if(dim == 0 || ngay.day < 1 || ngay.day > dim){
+        cout << "Ngay khong hop le";
+        return 0;
+    }
 //tăng 1 ngày nếu lớn hơn ngày max trong tháng đó thì về 1, tháng+1. tháng vượt 12 thì về 1 cộng năm
     ngay.day+=1;
     if( ngay.day>dim){
