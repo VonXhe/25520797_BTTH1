@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+//nhập 2 phân số
     long double tu1, mau1, tu2, mau2;
     cin>>tu1>> mau1>> tu2>> mau2;
     long double pso1= tu1/mau1;
@@ -14,4 +15,5 @@ int main()
     cout<<hieu<<"\n";
     cout<<tich<<"\n";
     cout<<thuong;
+//in ra tổng hiệu tích thương
 }
