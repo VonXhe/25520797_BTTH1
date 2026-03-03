@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-//hàm tính ucln, đầu vào tử+ mẫu, đầu ra: ucln
+//hàm tính ucln, đầu vào tử+ mẫu, đầu ra: ucln, định lí eculid.
+//Tính phần dư của tử chia mẫu rồi chuyển mẫu vào tử, lấy chia cho dư đó rồi lặp lại đến khi dư =0 thì dư trước đó là ucln
 int ucln(int tu,int mau){
     int tem=1;
     while(tem!=0){
