@@ -3,6 +3,8 @@ using namespace std;
 //hàm tính ucln, đầu vào tử+ mẫu, đầu ra: ucln, định lí eculid.
 //Tính phần dư của tử chia mẫu rồi chuyển mẫu vào tử, lấy chia cho dư đó rồi lặp lại đến khi dư =0 thì dư trước đó là ucln
 int ucln(int tu,int mau){
+    tu = abs(tu);
+    mau = abs(mau);
     int tem=1;
     while(tem!=0){
         tem=tu%mau;
@@ -16,6 +18,16 @@ int main()
     // dau vao: tu, mau
     int tu1, mau1;
     cin>> tu1>>mau1;
+//các trường hợp mẫu =0, tự =0, mẫu<0
+    if(mau1 == 0){
+        cout << "Khong hop le";
+        return 0;
+    }
+
+    if(tu1 == 0){
+        cout << 0 << "\n";
+        return 0;
+    }
     if(mau1<0){
         tu1=-tu1;
         mau1=-mau1;
