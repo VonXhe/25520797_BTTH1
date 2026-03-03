@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
+//tạo struct để dễ quản lý ngày
 struct date{
     int day;
     int month;
     int year;
 };
+// input: tháng, năm output:ngày trong tháng(có tính năm nhuẫn để quyết định ngày của tháng 2)
 int daysinmonth(int month, int year){
     int dim=0;
     if(month==1){
@@ -47,9 +49,11 @@ int daysinmonth(int month, int year){
 }
 int main()
 {
+//đầu vào ngày tháng năm
     date ngay;
     cin>>ngay.day>>ngay.month>>ngay.year;
     int dim=daysinmonth(ngay.month, ngay.year);
+//tăng 1 ngày nếu lớn hơn ngày max trong tháng đó thì về 1, tháng+1. tháng vượt 12 thì về 1 cộng năm
     ngay.day+=1;
     if( ngay.day>dim){
         ngay.day=1;
@@ -61,4 +65,5 @@ int main()
         ngay.year+=1;
     }
     cout<< ngay.day<<"/"<<ngay.month<<"/"<<ngay.year;
+//đầu ra ngày kế tiếp của ngày nhập vào
 }
