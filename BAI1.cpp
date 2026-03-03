@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//hàm tính ucln, đầu vào tử+ mẫu, đầu ra: ucln
 int ucln(int tu,int mau){
     int tem=1;
     while(tem!=0){
@@ -19,12 +20,12 @@ int main()
         mau1=-mau1;
     }
     int ucl;
-    //tinh ucln
     ucl=ucln(tu1,mau1);
     //chia tu, mau cho ucln
     tu1=tu1/ucl;
     mau1=mau1/ucl;
     cout<<tu1<<"\n";
-    cout<<mau1;
+cout<<mau1;
+// dau ra tu mau da rut gon
     return 0;
 }
